@@ -1,17 +1,17 @@
 import asyncio, os, time, aiohttp
 import aiohttp
 from pyrogram import filters
-from AnnayanXhub import AnnayanXhub as papaAnnayanX
+from annayanxhub import AnnayanXhub as annayanxhub
 from AnnayanX import app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 ###
-@app.on_message(filters.command("AnnayanXhub"))
-async def AnnayanXhub(_, message):
-    text = message.text[len("/AnnayanXhub") :]
-    papaAnnayanX(f"{text}").save(f"AnnayanXhub_{message.from_user.id}.png")
-    await message.reply_photo(f"AnnayanXhub_{message.from_user.id}.png")
-    os.remove(f"AnnayanXhub_{message.from_user.id}.png")
+@app.on_message(filters.command("annayanxhub"))
+async def annayanxhub(_, message):
+    text = message.text[len("/annayanxhub") :]
+    papaAnnayanX(f"{text}").save(f"annayanxhub_{message.from_user.id}.png")
+    await message.reply_photo(f"annayanxhub_{message.from_user.id}.png")
+    os.remove(f"annayanxhub_{message.from_user.id}.png")
 ####
 
 @app.on_message(filters.command(["github", "git"]))
