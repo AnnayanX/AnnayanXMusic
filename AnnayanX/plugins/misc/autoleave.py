@@ -5,7 +5,7 @@ from pyrogram.enums import ChatType
 
 import config
 from AnnayanX import app
-from AnnayanX.core.call import DAXX, autoend
+from AnnayanX.core.call import AnnayanX, autoend
 from AnnayanX.utils.database import get_client, is_active_chat, is_autoend
 
 
@@ -59,7 +59,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await DAXX.stop_stream(chat_id)
+                    await AnnayanX.stop_stream(chat_id)
                 except:
                     continue
                 try:

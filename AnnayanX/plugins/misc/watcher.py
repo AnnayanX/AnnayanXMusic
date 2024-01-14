@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from AnnayanX import app
-from AnnayanX.core.call import DAXX
+from AnnayanX.core.call import AnnayanX
 
 welcome = 20
 close = 30
@@ -11,4 +11,4 @@ close = 30
 @app.on_message(filters.video_chat_started, group=welcome)
 @app.on_message(filters.video_chat_ended, group=close)
 async def welcome(_, message: Message):
-    await DAXX.stop_stream_force(message.chat.id)
+    await AnnayanX.stop_stream_force(message.chat.id)

@@ -6,12 +6,12 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from AnnayanX import Carbon, YouTube, app
-from AnnayanX.core.call import DAXX
+from AnnayanX.core.call import AnnayanX
 from AnnayanX.misc import db
 from AnnayanX.utils.database import add_active_video_chat, is_active_chat
 from AnnayanX.utils.exceptions import AssistantErr
 from AnnayanX.utils.inline import aq_markup, close_markup, stream_markup
-from AnnayanX.utils.pastebin import DAXXBin
+from AnnayanX.utils.pastebin import AnnayanXBin
 from AnnayanX.utils.stream.queue import put_queue, put_queue_index
 from AnnayanX.utils.thumbnails import get_thumb
 
@@ -32,7 +32,7 @@ async def stream(
     if not result:
         return
     if forceplay:
-        await DAXX.force_stop_stream(chat_id)
+        await AnnayanX.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['play_19']}\n\n"
         count = 0
@@ -79,7 +79,7 @@ async def stream(
                     )
                 except:
                     raise AssistantErr(_["play_14"])
-                await DAXX.join_call(
+                await AnnayanX.join_call(
                     chat_id,
                     original_chat_id,
                     file_path,
@@ -116,7 +116,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await DAXXBin(msg)
+            link = await AnnayanXBin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -165,7 +165,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await DAXX.join_call(
+            await AnnayanX.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -225,7 +225,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await DAXX.join_call(chat_id, original_chat_id, file_path, video=None)
+            await AnnayanX.join_call(chat_id, original_chat_id, file_path, video=None)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -277,7 +277,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await DAXX.join_call(chat_id, original_chat_id, file_path, video=status)
+            await AnnayanX.join_call(chat_id, original_chat_id, file_path, video=status)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -333,7 +333,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await DAXX.join_call(
+            await AnnayanX.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -391,7 +391,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await DAXX.join_call(
+            await AnnayanX.join_call(
                 chat_id,
                 original_chat_id,
                 link,

@@ -1,7 +1,7 @@
 import re
 from AnnayanX import app
 from config import BOT_USERNAME
-from AnnayanX.utils.daxx_ban import admin_filter
+from AnnayanX.utils.annayanx_ban import admin_filter
 from AnnayanX.mongo.filtersdb import *
 from AnnayanX.utils.filters_func import GetFIlterMessage, get_text_reason, SendFilterMessage
 from AnnayanX.utils.yumidb import user_admin

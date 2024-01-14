@@ -2,7 +2,7 @@ import asyncio
 from pyrogram.enums import ChatType, ChatMemberStatus
 from AnnayanX import app
 from pyrogram import filters
-from AnnayanX.utils.daxx_ban import admin_filter
+from AnnayanX.utils.annayanx_ban import admin_filter
 
 
 

@@ -4,7 +4,7 @@ from AnnayanX import app
 
 waifu_api_url = 'https://api.waifu.im/search'
 
-# IAM_DAXX
+# AnnayanX
 
 def get_waifu_data(tags):
     params = {

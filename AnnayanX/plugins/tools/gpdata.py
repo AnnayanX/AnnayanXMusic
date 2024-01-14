@@ -4,7 +4,7 @@ from pyrogram import filters, Client
 from AnnayanX import app
 from config import OWNER_ID
 from pyrogram.types import Message
-from AnnayanX.utils.daxx_ban import admin_filter
+from AnnayanX.utils.annayanx_ban import admin_filter
 from pyrogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 
 

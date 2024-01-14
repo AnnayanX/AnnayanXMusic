@@ -3,7 +3,7 @@ from pyrogram import filters
 from pyrogram.enums import ChatType
 from pyrogram.errors import MessageDeleteForbidden, RPCError
 from pyrogram.types import Message
-from AnnayanX.utils.daxx_ban import admin_filter
+from AnnayanX.utils.annayanx_ban import admin_filter
 from AnnayanX import app
 
 
