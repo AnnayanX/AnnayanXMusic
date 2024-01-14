@@ -1,7 +1,7 @@
 import asyncio, os, time, aiohttp
 import aiohttp
 from pyrogram import filters
-from annayanxhub import AnnayanXhub as annayanxhub
+from daxxhub import daxxhub as annayanxhub
 from AnnayanX import app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
