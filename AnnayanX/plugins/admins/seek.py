@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from AnnayanX import YouTube, app
-from AnnayanX.core.call import DAXX
+from AnnayanX.core.call import AnnayanX
 from AnnayanX.misc import db
 from AnnayanX.utils import AdminRightsCheck, seconds_to_min
 from AnnayanX.utils.inline import close_markup
@@ -56,7 +56,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
     if "index_" in file_path:
         file_path = playing[0]["vidid"]
     try:
-        await DAXX.seek_stream(
+        await AnnayanX.seek_stream(
             chat_id,
             file_path,
             seconds_to_min(to_seek),

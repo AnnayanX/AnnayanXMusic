@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from AnnayanX import app
-from AnnayanX.core.call import DAXX
+from AnnayanX.core.call import AnnayanX
 from AnnayanX.misc import SUDOERS, db
 from AnnayanX.utils import AdminRightsCheck
 from AnnayanX.utils.database import is_active_chat, is_nonadmin_chat
@@ -94,7 +94,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         text=_["admin_32"].format(CallbackQuery.from_user.mention),
     )
     try:
-        await DAXX.speedup_stream(
+        await AnnayanX.speedup_stream(
             chat_id,
             file_path,
             speed,
