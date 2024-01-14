@@ -1,4 +1,4 @@
-from AnnayanX.core.bot import DAXX
+from AnnayanX.core.bot import AnnayanX
 from AnnayanX.core.dir import dirr
 from AnnayanX.core.git import git
 from AnnayanX.core.userbot import Userbot
@@ -12,7 +12,7 @@ git()
 dbb()
 heroku()
 
-app = DAXX()
+app = AnnayanX()
 api = SafoneAPI()
 userbot = Userbot()
 
