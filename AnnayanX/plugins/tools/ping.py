@@ -6,7 +6,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL
 from strings import get_command
 from AnnayanX import app
-from AnnayanX.core.call import Yukki
+from AnnayanX.core.call import AnnayanX
 from AnnayanX.utils import bot_sys_stats
 from AnnayanX.utils.decorators.language import language
 
