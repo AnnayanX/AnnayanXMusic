@@ -52,10 +52,11 @@ async def ping_com(client, message: Message, _):
     await asyncio.sleep(3)
     await response.edit_caption("**📩sᴇɴᴅɪɴɢ sʏsᴛᴇᴍ ᴀɴᴀʟʏsᴇᴅ ᴅᴀᴛᴀ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...**")
     start = datetime.now()
+    AnnayanX = @AnnayanX
     pytgping = await AnnayanX.ping()
     UP, CPU, RAM, DISK = await bot_sys_stats()
     resp = (datetime.now() - start).microseconds / 1000
-    text =  _["ping_2"].format(resp, app.name, UP, RAM, CPU, DISK, pytgping)
+    text =  _["ping_2"].format(resp, app.name, UP, RAM, CPU, DISK, pytgping, AnnayanX)
     carbon = await make_carbon(text)
     captions = "**ㅤ  🏓 ᴘɪɴɢ...ᴘᴏɴɢ...ᴘɪɴɢ✨\nㅤ  🎸 ᴅɪɴɢ...ᴅᴏɴɢ...ᴅɪɴɢ💞**"
     await message.reply_photo((carbon), caption=captions,
@@ -63,17 +64,17 @@ async def ping_com(client, message: Message, _):
             [
                 [
             InlineKeyboardButton(
-                text=_["S_B_5"],
+                text=_["AnnayanX"],
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         
         ],
         [
             InlineKeyboardButton(
-                text="✦ ɢʀᴏᴜᴘ ✦", url=f"https://t.me/HEROKUFREECC",
+                text="✦ ɢʀᴏᴜᴘ ✦", url=f"https://t.me/VrindavanNeeko16008",
             ),
             InlineKeyboardButton(
-                text="✧ ᴍᴏʀᴇ ✧", url=f"https://t.me/ALLTYPECC",
+                text="✧ ᴍᴏʀᴇ ✧", url=f"https://t.me/AvyuktaX",
             )
         ],
         [
