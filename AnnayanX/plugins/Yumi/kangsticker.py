@@ -14,7 +14,7 @@ from pyrogram.errors import (
     UserIsBlocked,
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-from DAXXMUSIC import app
+from AnnayanX import app
 from config import BOT_USERNAME
 from AnnayanX.utils.errors import capture_err
 
