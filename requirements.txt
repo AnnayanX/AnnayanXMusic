@@ -15,6 +15,8 @@ Faker
 pydub
 pycountry
 heroku3
+pickledb
+telegram
 apscheduler
 motor==3.3.2
 pillow==10.2.0
