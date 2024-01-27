@@ -13,7 +13,6 @@ dbb()
 heroku()
 
 app = AnnayanX()
-Throttled = AnnayanX()
 api = SafoneAPI()
 userbot = Userbot()
 
