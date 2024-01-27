@@ -1,5 +1,5 @@
 from pyrogram import Client, filters, types
-from pyrogram.errors import Throttled
+from AnnayanX import Throttled
 import re
 import time
 from AnnayanX import app
