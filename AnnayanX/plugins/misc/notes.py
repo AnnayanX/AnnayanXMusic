@@ -1,7 +1,7 @@
 from AnnayanX import app
 from config import BOT_USERNAME
 from pyrogram import filters
-from AnnayanX.utils.annayanx_ban import admin_filter
+from AnnayanX.utils.daxx_ban import admin_filter
 from AnnayanX.mongo.notesdb import *
 from AnnayanX.utils.notes_func import GetNoteMessage, exceNoteMessageSender, privateNote_and_admin_checker
 from AnnayanX.utils.yumidb import user_admin
@@ -82,7 +82,7 @@ async def PrivateNote(client, message):
     else:
         if await is_pnote_on(chat_id):
             await message.reply(
-                "Your notes are currently being sent in private. AnnayanXMUSIC will send a small note with a button which redirects to a private chat.",
+                "Your notes are currently being sent in private. DAXXMUSIC will send a small note with a button which redirects to a private chat.",
                 quote=True
             )
         else:
@@ -241,17 +241,4 @@ async def PrivateNoteButton(message, chat_id, NoteName):
 
 
 #
-"""**                                                                         
-────────────────────────────────────────────────────────────────────────
-─████████████────██████████████──████████──████████──████████──████████─
-─██░░░░░░░░████──██░░░░░░░░░░██──██░░░░██──██░░░░██──██░░░░██──██░░░░██─
-─██░░████░░░░██──██░░██████░░██──████░░██──██░░████──████░░██──██░░████─
-─██░░██──██░░██──██░░██──██░░██────██░░░░██░░░░██──────██░░░░██░░░░██───
-─██░░██──██░░██──██░░██████░░██────████░░░░░░████──────████░░░░░░████───
-─██░░██──██░░██──██░░░░░░░░░░██──────██░░░░░░██──────────██░░░░░░██─────
-─██░░██──██░░██──██░░██████░░██────████░░░░░░████──────████░░░░░░████───
-─██░░██──██░░██──██░░██──██░░██────██░░░░██░░░░██──────██░░░░██░░░░██───
-─██░░████░░░░██──██░░██──██░░██──████░░██──██░░████──████░░██──██░░████─
-─██░░░░░░░░████──██░░██──██░░██──██░░░░██──██░░░░██──██░░░░██──██░░░░██─
-─████████████────██████──██████──████████──████████──████████──████████─
-────────────────────────────────────────────────────────────────────────**"""
+"""**  @AnnayanX **"""
