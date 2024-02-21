@@ -21,7 +21,7 @@ from AnnayanX.utils.decorators.language import language, languageCB
 from AnnayanX.utils.inline.playlist import (botplaylist_markup,
                                               get_playlist_markup,
                                               warning_markup)
-from AnnayanX.utils.pastebin import VIPBin
+from AnnayanX.utils.pastebin import AnnayanXBin
 import time
 import yt_dlp
 from youtube_search import YoutubeSearch
