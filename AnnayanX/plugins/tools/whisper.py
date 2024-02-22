@@ -20,7 +20,7 @@ async def _whisper(_, inline_query):
                 title="💒 Whisper",
                 description=f"@{BOT_USERNAME} [ USERNAME | ID ] [ TEXT ]",
                 input_message_content=InputTextMessageContent(f"💒 Usage:\n\n@{BOT_USERNAME} [ USERNAME | ID ] [ TEXT ]"),
-                thumb_url="https://te.legra.ph/file/3eec679156a393c6a1053.jpg",
+                thumb_url="https://telegra.ph/file/e9d429ca3989b8fe70a8e.jpg",
                 reply_markup=switch_btn
             )
         ]
@@ -39,7 +39,7 @@ async def _whisper(_, inline_query):
                     title="💒 Whisper",
                     description="Invalid username or ID!",
                     input_message_content=InputTextMessageContent("Invalid username or ID!"),
-                    thumb_url="https://te.legra.ph/file/3eec679156a393c6a1053.jpg",
+                    thumb_url="https://te.legra.ph/file/e9d429ca3989b8fe70a8e.jpg",
                     reply_markup=switch_btn
                 )
             ]
@@ -52,14 +52,14 @@ async def _whisper(_, inline_query):
                     title="💒 Whisper",
                     description=f"Send a Whisper to {user.first_name}!",
                     input_message_content=InputTextMessageContent(f"💒 You are sending a whisper to {user.first_name}.\n\nType your message/sentence."),
-                    thumb_url="https://te.legra.ph/file/3eec679156a393c6a1053.jpg",
+                    thumb_url="https://te.legra.ph/file/e9d429ca3989b8fe70a8e.jpg",
                     reply_markup=whisper_btn
                 ),
                 InlineQueryResultArticle(
                     title="🔩 One-Time Whisper",
                     description=f"Send a one-time whisper to {user.first_name}!",
                     input_message_content=InputTextMessageContent(f"🔩 You are sending a one-time whisper to {user.first_name}.\n\nType your message/sentence."),
-                    thumb_url="https://te.legra.ph/file/3eec679156a393c6a1053.jpg",
+                    thumb_url="https://te.legra.ph/file/e9d429ca3989b8fe70a8e.jpg",
                     reply_markup=one_time_whisper_btn
                 )
             ]
@@ -111,8 +111,8 @@ async def in_help():
         InlineQueryResultArticle(
             title="💒 Whisper",
             description=f"@AnnayanXMusicBot [USERNAME | ID] [TEXT]",
-            input_message_content=InputTextMessageContent(f"**📍Usage:**\n\n@AnnayanXMusicBot (Target Username or ID) (Your Message).\n\n**Example:**\n@AnnayanXMusicBot @username AnnayanX"),
-            thumb_url="https://te.legra.ph/file/3eec679156a393c6a1053.jpg",
+            input_message_content=InputTextMessageContent(f"**📍Usage:**\n\n@AnnayanXMusicBot (Target Username or ID) (Your Message).\n\n**Example:**\n@AnnayanXMusicBot @username VasudevKrishnaX"),
+            thumb_url="https://te.legra.ph/file/e9d429ca3989b8fe70a8e.jpg",
             reply_markup=switch_btn
         )
     ]
