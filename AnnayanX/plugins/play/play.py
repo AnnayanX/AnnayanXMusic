@@ -7,7 +7,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from AnnayanX import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from AnnayanX.core.call import DAXX
+from AnnayanX.core.call import AnnayanX
 from AnnayanX.utils import seconds_to_min, time_to_seconds
 from AnnayanX.utils.channelplay import get_channeplayCB
 from AnnayanX.utils.decorators.language import languageCB
