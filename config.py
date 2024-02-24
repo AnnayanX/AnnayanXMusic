@@ -18,8 +18,9 @@ BOT_USERNAME = getenv("BOT_USERNAME" , "AnnayanXMusicBot")
 # Don't Add style font 
 BOT_NAME = getenv("BOT_NAME" , "AnnayanX")
 #get Your Assistant User name
-ASSUSERNAME = getenv("ASSUSERNAME" , "AnnayanX")
-EVALOP = list(map(int, getenv("EVALOP", "6855137948").split()))
+ASSUSERNAME = getenv("ASSUSERNAME" , "AnnayanXAssistant")
+EVALOP = list(map(int, getenv("EVALOP","6366217850").split()))
+OWNER_ID = int(getenv("OWNER_ID", 6366217850))
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
@@ -68,7 +69,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 5242880000))
 # Checkout https://www.gbmb.org/mb-to-bytes for converting mb to bytes
 
 
-# Ge@STRINGSEASO_NBOT2 session from @STRINGSEASO_NBOT
+
 STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
@@ -91,7 +92,7 @@ PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://telegra.ph/file/00360393a15daf7fc4e9d.jpg"
 )
 PLAYLIST_IMG_URL = "https://telegra.ph/file/d723f4c80da157fca1678.jpg"
-STATS_IMG_URL = "https://telegra.ph/file/d30d11c4365c025c25e3e.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/92795d751b3711d6aa22c.jpg"
 TELEGRAM_AUDIO_URL = "https://telegra.ph/file/48f39202823b358203234.jpg"
 TELEGRAM_VIDEO_URL = "https://telegra.ph/file/e575ae40d6635250974e1.jpg"
 STREAM_IMG_URL = "https://telegra.ph/file/03efec694e41e891b29dc.jpg"
