@@ -52,6 +52,7 @@ SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/VrindavanNagri16008")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
+DEEP_API = os.environ.get("DEEP_API")
 
 
 # Get this credentials from https://developer.spotify.com/dashboard
