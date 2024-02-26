@@ -10,7 +10,7 @@ from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
 from pyrogram import filters
 from pyrogram.types import *
-from EQUROBOT import app
+from AnnayanX import app
 
 #-------------------
 
