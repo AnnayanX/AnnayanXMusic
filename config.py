@@ -23,7 +23,7 @@ EVALOP = list(map(int, getenv("EVALOP","6366217850").split()))
 OWNER_ID = int(getenv("OWNER_ID", 6366217850))
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
-
+DEEP_API = getenv("DEEP_API","ef488aaf-e253-4cd9-b115-d24ece89a5c7")
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 
 # Chat id of a group for logging bot's activities
