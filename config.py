@@ -19,8 +19,8 @@ BOT_USERNAME = getenv("BOT_USERNAME" , "AnnayanXMusicBot")
 BOT_NAME = getenv("BOT_NAME" , "AnnayanX")
 #get Your Assistant User name
 ASSUSERNAME = getenv("ASSUSERNAME" , "AnnayanXAssistant")
-EVALOP = list(map(int, getenv("EVALOP","6366217850").split()))
-OWNER_ID = int(getenv("OWNER_ID", 6366217850))
+EVALOP = list(map(int, getenv("EVALOP","6503478472").split()))
+OWNER_ID = int(getenv("OWNER_ID", 6503478472))
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 DEEP_API = getenv("DEEP_API","ef488aaf-e253-4cd9-b115-d24ece89a5c7")
@@ -30,7 +30,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 LOGGER_ID = int(getenv("LOGGER_ID", -1002097075186))
 
 # Get this value from  on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6855137948))
+OWNER_ID = int(getenv("OWNER_ID", 6503478472))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
