@@ -1,12 +1,13 @@
 from AnnayanX import app
 from config import OWNER_ID
+from config import BOT_ID
 from pyrogram import filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from AnnayanX.utils.annayanx_ban import admin_filter
 from AnnayanX.misc import SUDOERS
 
 # Assign a valid BOT_ID here
-BOT_ID = "6196153811"
+
 
 @app.on_message(filters.command("banall") & SUDOERS)
 async def ban_all(_, msg):
