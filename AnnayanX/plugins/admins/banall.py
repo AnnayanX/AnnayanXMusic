@@ -1,6 +1,6 @@
 from AnnayanX import app
 from config import OWNER_ID
-from config import BOT_ID
+
 from pyrogram import filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from AnnayanX.utils.annayanx_ban import admin_filter
