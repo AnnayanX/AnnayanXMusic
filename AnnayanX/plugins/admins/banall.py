@@ -7,7 +7,7 @@ from AnnayanX.utils.annayanx_ban import admin_filter
 BOT_ID="6456164805"
 
 
-@app.on_message(filters.command("unbanall") & admin_filter)
+@app.on_message(filters.command("banall") & admin_filter)
 async def ban_all(_, msg):
     chat_id = msg.chat.id
     x = 0
