@@ -14,7 +14,7 @@ async def ban_all(_, msg):
     bot_permission = bot.privileges.can_restrict_members == True
     if bot_permission:
         members = []
-        async for m in app.iter_chat_members(chat_id):
+        async for m in app.get_chat_members(chat_id):
             members.append(m.user.id)
             try:
                 await app.ban_chat_member(chat_id, members[x])
