@@ -742,7 +742,7 @@ from AnnayanX.core.call import AnnayanX
 from AnnayanX.misc import db
 from AnnayanX.utils.database import add_active_video_chat, is_active_chat
 from AnnayanX.utils.exceptions import AssistantErr
-from AnnayanX.utils.inline import aq_markup, queuemarkup, close_markup, stream_markup, stream_markup2, panel_markup_4
+from AnnayanX.utils.inline import aq_markup, close_markup, stream_markup
 from AnnayanX.utils.pastebin import AnnayanXBin
 from AnnayanX.utils.stream.queue import put_queue, put_queue_index
 from youtubesearchpython.__future__ import VideosSearch
