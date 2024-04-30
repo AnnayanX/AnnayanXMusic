@@ -1,5 +1,5 @@
 from pyrogram import filters
-import os
+
 from AnnayanX import YouTube, app
 from AnnayanX.utils.channelplay import get_channeplayCB
 from AnnayanX.utils.decorators.language import languageCB
@@ -35,8 +35,7 @@ async def play_live_stream(client, CallbackQuery, _):
     try:
         details, track_id = await YouTube.track(vidid, True)
     except:
-        
-        os.system(f"kill -9 {os.getpid()} && bash start")
+        return await mystic.edit_text(_["play_3"])
     ffplay = True if fplay == "f" else None
     if not details["duration_min"]:
         try:
