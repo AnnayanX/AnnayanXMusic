@@ -10,7 +10,7 @@ from AnnayanX.utils.database import get_assistant
 from config import API_ID, API_HASH
 from AnnayanX import app
 from AnnayanX.misc import SUDOERS
-from AnnayanX.utils.database import get_assistant, clonebotdb
+from AnnayanX.utils.clonedb import get_assistant, clonebotdb
 from config import LOGGER_ID
 
 CLONES = set()
